@@ -7,6 +7,11 @@ function initializePage() {
             $('.jumbotron h1').text("Javascript is connected");
             });
     $("a.thumbnail").click(projectClick);
+    $("p").hover(function(){
+        $(this).css("background-color", "yellow");
+        }, function(){
+        $(this).css("background-color", "pink");
+    });
 }
 
 function projectClick(e) { 
@@ -17,3 +22,4 @@ function projectClick(e) { 
     // the object that triggered the event      
     $(this).css("background-color", "#7fff00");
 }
+
